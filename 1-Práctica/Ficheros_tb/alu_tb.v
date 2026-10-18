@@ -26,7 +26,7 @@ module alu_tb;
     Op = 3'b101; #20;   // A and B
     Op = 3'b110; #20;   // A or B
     Op = 3'b111; #20;   // A xor B
-    // Demostrar que 
+ 
     A = 4'b0101; B = 4'b0101; Op = 3'b011; #20;   // A-B  -> R=0000, zero=1, carry=1
     A = 4'b1111; B = 4'b0010; Op = 3'b010; #20;   // A+B  -> carry=1, zero=0
 

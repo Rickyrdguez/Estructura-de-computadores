@@ -5,7 +5,7 @@ module preprocess(output wire [3:0] AMod, output wire [3:0] BMod, output wire ad
   assign op1_A = Op[2] | Op[1];
   assign op2_B = Op[2] | Op[1];
   assign cpl1 = ~Op[2] & Op[0];
-  assign add1 = Op[2] | Op[0];
+  assign add1 = Op[0];
 
   // Instancias
   mux2_4 muxA(AMod, 4'b0000, A, op1_A);
